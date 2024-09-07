@@ -28,5 +28,9 @@
         android:id="@+id/horoscopeDetailActivity"
         android:name="com.patriespert.horoscapp.ui.detail.HoroscopeDetailActivity"
         android:label="activity_horoscope_detail"
-        tools:layout="@layout/activity_horoscope_detail" />
+        tools:layout="@layout/activity_horoscope_detail" >
+        <argument
+            android:name="type"
+            app:argType="com.patriespert.horoscapp.domain.model.HoroscopeModel" />
+    </activity>
 </navigation>
