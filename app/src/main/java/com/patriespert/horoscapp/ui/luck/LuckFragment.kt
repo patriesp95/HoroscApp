@@ -1,6 +1,7 @@
 package com.patriespert.horoscapp.ui.luck
 
 import android.animation.ObjectAnimator
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -61,6 +62,7 @@ class LuckFragment : Fragment() {
         startActivity(shareIntent)
     }
 
+    @SuppressLint("ClickableViewAccessibility")
     private fun initListeners() {
         binding.ivRoulette.setOnTouchListener(object: onSwipeTouchListener(requireContext()){
             override fun onSwipeRight() {
